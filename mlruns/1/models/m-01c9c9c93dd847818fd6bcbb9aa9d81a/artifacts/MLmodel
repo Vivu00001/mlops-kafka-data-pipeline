@@ -1,0 +1,23 @@
+artifact_path: file:C:/Users/vivek/OneDrive/Desktop/MY_PROJECTS/kafka_demo_mlops_project/mlruns/1/models/m-01c9c9c93dd847818fd6bcbb9aa9d81a/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.10
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.13.0
+model_id: m-01c9c9c93dd847818fd6bcbb9aa9d81a
+model_size_bytes: 905
+model_uuid: m-01c9c9c93dd847818fd6bcbb9aa9d81a
+prompts: null
+run_id: 303881fabc5c453a9a13021106cbbc13
+utc_time_created: '2026-06-09 09:20:00.331200'

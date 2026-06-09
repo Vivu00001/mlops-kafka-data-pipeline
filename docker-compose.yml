@@ -17,6 +17,9 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
+    networks:
+      - mlops_bridge
+
   kafka:
     image: apache/kafka:latest
     container_name: kafka
@@ -34,5 +37,12 @@ services:
       KAFKA_CONTROLLER_QUORUM_VOTERS: 1@localhost:9093
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
 
+    networks:
+      - mlops_bridge
+
 volumes:
   postgres_data:
+
+networks:
+  mlops_bridge:
+    driver: bridge

@@ -1,0 +1,6 @@
+kafka-python==2.3.2
+psycopg2-binary==2.9.12
+
+kafka-python==2.3.2
+psycopg2-binary==2.9.12
+Faker==40.21.0
